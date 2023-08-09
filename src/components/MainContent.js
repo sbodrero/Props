@@ -1,5 +1,5 @@
 import React from 'react';
-import UserCount from './UserCount';
+import UsersCount from './UsersCount';
 import UsersList from './UsersList';
 
 export default function MainContent({ users, getUsersCount, title, year, style }) {
@@ -7,7 +7,7 @@ export default function MainContent({ users, getUsersCount, title, year, style }
     <div style={style}>
       <h1>Accueil</h1>
       <h2>{title} of {year}</h2>
-      <UserCount users={users} getUsersCount={getUsersCount} />
+      <UsersCount users={users} getUsersCount={getUsersCount} />
       <UsersList users={users} />
     </div>
   )
