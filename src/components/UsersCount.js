@@ -1,7 +1,7 @@
 import usersIcon from '../assets/images/users-group.png';
 import React from 'react';
 
-export default function UsersCount({ users, getUsersCount }) {
+export default function UsersCount({ users = [], getUsersCount = f => f }) {
   return (
     <div style={{ marginBottom: '20px' }}>
       <img src={usersIcon} title="Icon users" alt="Icon users" width="50px" style={{ verticalAlign: 'middle '}}/>

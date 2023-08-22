@@ -2,7 +2,7 @@ import React from 'react';
 import UsersCount from './UsersCount';
 import UsersList from './UsersList';
 
-export default function MainContent({ users, getUsersCount, title, year, style }) {
+export default function MainContent({ users = [], getUsersCount = f => f, title, year, style }) {
   return (
     <div style={style}>
       <h1>Accueil</h1>
