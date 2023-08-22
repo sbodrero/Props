@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function MainContent({ list, count, title, year, style }) {
   return (
@@ -9,4 +10,12 @@ export default function MainContent({ list, count, title, year, style }) {
       {list}
     </div>
   )
+}
+
+MainContent.propTypes = {
+  list: PropTypes.element,
+  count: PropTypes.element,
+  title: PropTypes.string,
+  year: PropTypes.number,
+  style: PropTypes.object,
 }

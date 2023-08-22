@@ -5,10 +5,10 @@ import UsersList from './components/UsersList';
 
 function App() {
   const users = [
-    {name: 'Jean', city: 'Lons'},
-    {name: 'Roger', city: 'Tour'},
-    {name: 'Cécile', city: 'Angers'},
-  ]
+    {name: 'Jean', city: 'Lons', country: 'Suisse'},
+    {name: 'Roger', city: 'Tour', country: 'France'},
+    {name: 'Cécile', city: 'Angers', country: 'Turquie'},
+  ];
 
   const getUsersCount = users => users.length;
   const pageTitle = "Les des utilisateurs";
