@@ -1,5 +1,7 @@
 import './App.css';
 import MainContent from './components/MainContent';
+import UsersCount from './components/UsersCount';
+import UsersList from './components/UsersList';
 
 function App() {
   const users = [
@@ -16,7 +18,13 @@ function App() {
   return (
     <div className='App'>
       <h1>Hello React.</h1>
-      <MainContent users={users} getUsersCount={getUsersCount} title={pageTitle} year={year} style={style} />
+      <MainContent
+        list={<UsersList users={users} />}
+        count={<UsersCount users={users} getUsersCount={getUsersCount} />}
+        title={pageTitle}
+        year={year}
+        style={style}
+      />
     </div>
   );
 }
